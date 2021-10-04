@@ -1,0 +1,16 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<h1>{{title}}</h1>
+<h2>using ngfor</h2>
+<ul>
+  <li *ngFor="let student of Students; let i=index; let f=first; let l=last; let ev=even; let od=odd">
+    {{i+1}}- {{student.name}} - {{f}}-{{l}}-{{ev}}-{{od}}
+  </li>
+</ul>
+<router-outlet></router-outlet>
